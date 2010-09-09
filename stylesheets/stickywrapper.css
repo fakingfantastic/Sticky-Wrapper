@@ -1,0 +1,10 @@
+.sticky-wrapper {
+  background: url(http://www.mycatchonmedia.com/images/sticky-header/bg.png) bottom repeat-x;
+	position: fixed;
+	top: 0px;
+	display: none;
+}
+
+.sticky-wrapper ul {
+	margin: 0;
+}

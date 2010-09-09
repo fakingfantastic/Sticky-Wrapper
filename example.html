@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>Sticky Wrapper</title>
+		<link rel="stylesheet" href="stylesheets/stickywrapper.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="javascripts/stickywrapper.jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+		$(function() {
+			$('.sticky-header').stickyWrapper();
+		});	
+		</script>
+	</head>
+	<body>
+		<ul class="rows sticky-header">
+			<li class="rows row-heading">Test Header</li>
+		</ul>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<li>11</li>
+			<li>12</li>
+			<li>13</li>
+			<li>14</li>
+			<li>15</li>
+			<li>16</li>
+			<li>17</li>
+			<li>18</li>
+			<li>19</li>
+			<li>20</li>
+			<li>21</li>
+			<li>22</li>
+			<li>23</li>
+			<li>24</li>
+		</ul>
+		
+	</body>
+	
+	
+	<style>
+	/* Themed Lists */
+	ul { list-style: none; margin: 0; padding: 0; }
+	ul.rows {}
+	ul.rows span.col {
+		float: left;
+	}
+
+	li { 
+		font-size: .9em;
+		padding: .9em 1em;
+		border-bottom:1px solid #E7E7E7;
+		color: #333;
+	}
+	li:hover { 
+		background: #fafafa;
+	}
+	li.row-heading {
+		background: black;
+		color: white;
+		padding: 1.5em 1em;
+		text-transform: uppercase;
+		font-size: 10px;
+		border-bottom: 0;
+	}
+	li.row-heading:hover {
+		background: black;
+	}
+	</style>
+</html>
