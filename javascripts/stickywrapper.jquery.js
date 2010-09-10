@@ -5,11 +5,6 @@
 			
 			$("body").prepend('<div class="sticky-wrapper"></div>');
 
-			$(window).scroll(function(){
-				$(".sticky-header:last").each(function(){
-					tracker(this);
-				})    
-			});
 
 
 			function tracker(elm) {
@@ -25,7 +20,11 @@
 				}
 			}
 
-			return this.each(function() {  
+			return this.each(function() { 
+				var $elm = this; 
+				$(window).scroll(function(){
+						tracker($elm);
+				});
 				var $clone = $(this).clone(true).width($(this).width());
 				$('.sticky-wrapper').append($clone);
 				$(".sticky-wrapper").height($(".sticky-wrapper").height() + 15); // Add in height of BG Fade
