@@ -1,7 +1,10 @@
 (function(jQuery){  
 	jQuery.fn.extend({   
 
-		stickyWrapper: function() {  
+		stickyWrapper: function(settings) {  
+			var options = {drop_shadow_height: 15};
+			
+			jQuery.extend(options, settings);
 			
 			jQuery(this).parent().prepend('<div class="sticky-wrapper"></div>');
 
@@ -25,7 +28,7 @@
 				});
 				var jQueryclone = jQuery(this).clone(true).width(jQuery(this).width());
 				jQuery('.sticky-wrapper').append(jQueryclone);
-				jQuery(".sticky-wrapper").height(jQuery(".sticky-wrapper").height() + 15); // Add in height of BG Fade
+				jQuery(".sticky-wrapper").height(jQuery(".sticky-wrapper").height() + options.drop_shadow_height); // Add in height of BG Fade
 				positionStickyHeader(jQueryelm);
 			}); 
 
