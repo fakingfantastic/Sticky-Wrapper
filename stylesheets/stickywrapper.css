@@ -1,5 +1,5 @@
 .sticky-wrapper {
-  background: url(/Sticky-Wrapper/images/bg.png) bottom repeat-x;
+  background: url(../images/bg.png) bottom repeat-x;
 	position: fixed;
 	top: 0px;
 	display: none;
