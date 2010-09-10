@@ -3,9 +3,7 @@
 
 		stickyWrapper: function() {  
 			
-			$("body").prepend('<div class="sticky-wrapper"></div>');
-
-
+			$(this).parent().prepend('<div class="sticky-wrapper"></div>');
 
 			function tracker(elm) {
 				elmTopOffset = $(elm).offset().top
